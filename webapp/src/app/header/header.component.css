@@ -1,0 +1,49 @@
+:host{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(30,56,76,1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  z-index: 1000;
+  border-bottom: .5rem solid #dd971a;
+}
+.logo-name{
+  width: 18rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & img{
+    width: 3.5rem;
+    height: 3.5rem;
+
+  }
+
+  .name{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    line-height: 230%;
+
+    .thin{
+      font-size: 1.5rem;
+      letter-spacing: .8rem;
+      font-weight: 300;
+      padding-left: .6rem;
+      color: rgba(221, 151, 26, 1);
+    }
+    .thick{
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
+
+
+
