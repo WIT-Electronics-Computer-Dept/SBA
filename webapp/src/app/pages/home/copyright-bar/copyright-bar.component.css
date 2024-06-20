@@ -1,0 +1,15 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 100%;
+  color: rgb(33, 37, 41);
+  border-bottom: 3.3rem solid rgba(30, 56, 76, 1);
+  margin-top: 1rem;
+  align-items: center;
+  text-align: center;
+
+}
+p{
+  font-size: .6rem;
+}

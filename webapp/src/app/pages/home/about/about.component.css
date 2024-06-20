@@ -4,10 +4,17 @@
   align-items: center;
   justify-content: center;
 }
+.band{
+  height: 5rem;
+  width: 100%;
+  background-color: rgba(30, 56, 76, 1);
+  color: rgba(30, 56, 76, 1);
+  /*border-top: 1rem solid rgba(221, 151, 26, 1);*/
+}
 .card {
   min-height: 25rem;
-  margin: 2rem 1rem;
-  padding: .5rem;
+  margin: 1rem ;
+  padding: 1rem;
   width: 90%;
   border: 1px solid grey;
   border-radius: 8px;
@@ -16,15 +23,11 @@
   .image-text {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 7rem;
-
-    margin: 0.5rem;
     & img {
       height: 5rem;
-      width: 6rem;
-      margin-right: .5rem;
-
+      width: 5rem;
     }
     & p {
       font-size: 1rem;

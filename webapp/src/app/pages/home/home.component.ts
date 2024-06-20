@@ -3,11 +3,18 @@ import { BuildingComponent } from './building/building.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { OffBearerComponent } from './off-bearer/off-bearer.component';
+import { CopyrightBarComponent } from './copyright-bar/copyright-bar.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BuildingComponent, AboutComponent, ContactComponent, OffBearerComponent],
+  imports: [
+    BuildingComponent,
+    AboutComponent,
+    ContactComponent,
+    OffBearerComponent,
+    CopyrightBarComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
