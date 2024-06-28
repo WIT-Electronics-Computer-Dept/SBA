@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { BearerComponent } from './bearer/bearer.component';
+import { Bearer } from '../bearer';
+import { Bearers } from './office-bearers';
+
 
 @Component({
   selector: 'app-off-bearer',
@@ -10,4 +13,9 @@ import { BearerComponent } from './bearer/bearer.component';
 })
 export class OffBearerComponent {
 
+  bearers!:Bearer[];
+
+  ngOnInit(){
+    this.bearers= Bearers;
+  }
 }

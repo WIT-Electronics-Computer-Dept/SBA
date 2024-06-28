@@ -1,1 +1,26 @@
-<p>circulars works!</p>
+<div class="container">
+  <app-page-title title="Circulars and Notices"></app-page-title>
+  <div class="tabs-header">
+    <div
+      [ngClass]="{ isSelected: isCurrentSelected, isNotSelected: !isCurrentSelected }"
+      (click)="onClick()"
+      class="current"
+      routerLink="current"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <h5>Current</h5>
+    </div>
+    <div
+      [ngClass]="{ isSelected: !isCurrentSelected, isNotSelected: isCurrentSelected }"
+      (click)="onClick()"
+      class="archived"
+      routerLink="archived"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <h5>Archived</h5>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

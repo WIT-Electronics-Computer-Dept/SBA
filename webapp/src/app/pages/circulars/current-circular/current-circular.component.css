@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin: 0 0.8rem;
+  scrollbar-width: none;  /* Firefox */
+
+}
+.container::-webkit-scrollbar{
+  display: none;  /* Safari and Chrome */
+}

@@ -5,6 +5,8 @@ import { CircularsComponent } from './pages/circulars/circulars.component';
 import { EventsComponent } from './pages/events/events.component';
 import { PaymentsComponent } from './pages/payments/payments.component';
 import { UserComponent } from './pages/user/user.component';
+import { CurrentCircularComponent } from './pages/circulars/current-circular/current-circular.component';
+import { ArchivedCircularComponent } from './pages/circulars/archived-circular/archived-circular.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,7 +15,7 @@ export const routes: Routes = [
   {
     path: 'circulars',
     component: CircularsComponent,
-    /*children: [
+    children: [
       { path: '', redirectTo: 'current', pathMatch: 'full' },
       {
         path: 'current', // child route path
@@ -23,7 +25,7 @@ export const routes: Routes = [
         path: 'archived',
         component: ArchivedCircularComponent, // archive child route component that the router renders
       },
-    ],*/
+    ],
   },
   { path: 'events',
     component: EventsComponent,

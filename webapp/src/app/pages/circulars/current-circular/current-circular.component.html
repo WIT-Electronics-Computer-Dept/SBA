@@ -1,0 +1,6 @@
+<div class="container">
+  @for (notice of currentNotices; track $index){
+  <app-notice-card [entry]="notice"></app-notice-card>
+  }
+</div>
+<div class="empty"></div>

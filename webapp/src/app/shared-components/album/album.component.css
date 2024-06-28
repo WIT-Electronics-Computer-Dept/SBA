@@ -1,0 +1,19 @@
+:host{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border-top: 1px solid grey;
+  border-bottom: 2px solid lightgrey;
+  padding: .5rem 0;
+  height: fit-content;
+  width: 98%;
+}
+.photo{
+  height: 4rem;
+  width: 3.8rem;
+  border: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

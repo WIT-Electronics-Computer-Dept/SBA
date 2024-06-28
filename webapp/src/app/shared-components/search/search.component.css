@@ -1,0 +1,28 @@
+:host{
+  width: 65%;
+}
+.container{
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 1.8rem;
+}
+.search{
+  background-color: transparent;
+  height: 1.4rem;
+  padding: .4rem;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  width: 75%;
+  margin-left: 3px;
+}
+input.search:focus{
+  background-color: white;
+  color: black;
+  outline:none;
+}
+.btn{
+  width: 18%;
+  height: 1.3rem;
+  margin-right: .5rem;
+}

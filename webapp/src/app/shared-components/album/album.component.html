@@ -1,1 +1,6 @@
-<p>album works!</p>
+@for (url of photoURL; track $index) {
+  <div class="photo">
+   <!--  <img [src]="url" alt="" />*/  -->
+     <p>{{url}}</p>
+  </div>
+  }

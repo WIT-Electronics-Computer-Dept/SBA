@@ -3,13 +3,18 @@
   flex-direction: column;
   height: 8rem;
   width: 100%;
-  color: rgb(33, 37, 41);
   border-bottom: 3.3rem solid rgba(30, 56, 76, 1);
   margin-top: 1rem;
-  align-items: center;
   text-align: center;
-
+  text-wrap: balance;
 }
 p{
+
   font-size: .6rem;
+  background-color: rgba(221, 151, 26, 1);
 }
+span{
+  font-weight: 500;
+}
+
+

@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  padding: 0 .2rem;
+}
+.container>p{
+  font-size: .8rem;
+  margin-bottom: .2rem;
+  color: #a80000
+  ;
+}
+.AlphabetNav {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  padding: 0.5rem;
+  background: ghostwhite;
+  border-radius: 4px;
+}
+.AlphabetNav a {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 600;
+  text-decoration: none;
+  color: darkgray;
+  margin: auto 0.2rem;
+}
+.AlphabetNav a:hover {
+  background: #dd971a;
+  color: #444;
+}
+.AlphabetNav .active {
+  background: #dd971a;
+  color: white;
+}

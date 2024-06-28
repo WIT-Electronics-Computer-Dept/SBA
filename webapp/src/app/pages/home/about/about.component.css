@@ -5,11 +5,11 @@
   justify-content: center;
 }
 .band{
-  height: 5rem;
+  height: 1rem;
   width: 100%;
-  background-color: rgba(30, 56, 76, 1);
-  color: rgba(30, 56, 76, 1);
-  /*border-top: 1rem solid rgba(221, 151, 26, 1);*/
+  background-color: rgba(221, 151, 26, 1);
+  color: rgba(221, 151, 26, 1);
+  margin-bottom: 2rem;
 }
 .card {
   min-height: 25rem;

@@ -4,11 +4,9 @@
     <h5>Office Bearers</h5>
   </div>
   <div class="contact">
-    <app-bearer></app-bearer>
-    <app-bearer></app-bearer>
-    <app-bearer></app-bearer>
-    <app-bearer></app-bearer>
-    <app-bearer></app-bearer>
+    @for (bearer of bearers; track $index) {
+      <app-bearer [bearer]="bearer"></app-bearer>
+    }
   </div>
 </div>
 
