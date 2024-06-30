@@ -1,1 +1,14 @@
-<p>members works!</p>
+<div class="container">
+  <app-page-title title="Members Directory"></app-page-title>
+  <div class="search-become flx-dir-row">
+    <app-search></app-search>
+    <input class="btn-dark-blue" type="button" value="Apply Membership" />
+  </div>
+  <app-alpha-sort></app-alpha-sort>
+  <div class="members">
+    @for (member of members; track $index) {
+      <app-member-card [member]="member"></app-member-card>
+    }
+  </div>
+  <div class="empty"></div>
+</div>

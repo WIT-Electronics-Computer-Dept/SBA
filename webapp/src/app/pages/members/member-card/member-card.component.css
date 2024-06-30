@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: fit-content;
+  width: 98%;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 0.4rem;
+  box-shadow: 2px 2px 2px #ddd;
+}
+.photo {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 0.5rem;
+  background: #ddd;
+  border-radius: 50%;
+}
+img{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+.description {
+  width: 75%;
+  height: 3.5rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-wrap: balance;
+  color: rgba(33, 37, 41, 1);
+}
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.email .phone {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+

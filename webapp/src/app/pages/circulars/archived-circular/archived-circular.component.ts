@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApisService } from '../../../services/apis.service';
+import { NoticeService } from '../../../services/notice.service';
 import { NoticeCardComponent } from '../notice-card/notice-card.component';
 
 @Component({
@@ -11,11 +11,10 @@ import { NoticeCardComponent } from '../notice-card/notice-card.component';
 })
 export class ArchivedCircularComponent {
   archivedNotices: any[] = [];
-  constructor(private service: ApisService) {}
+  constructor(private service: NoticeService) {}
 
   ngOnInit() {
       this.service.getArchivedNotices();
-      //@TO-DO: destroy observable to avoid memory leak in ngOnDestroy()
       this.service.archivedNotices$.subscribe((notices) => {
       this.archivedNotices = notices;
     });
